@@ -20,7 +20,7 @@ def mean_matrix(matrix: list) -> float:
 print(f"Mean: {mean_matrix(array)}")
 
 
-
+# Function to find variance
 def variance_matrix(matrix: list) -> float:
     mean = mean_matrix(matrix)
     total_entries = len(matrix) * len(matrix[0])
@@ -35,6 +35,8 @@ def variance_matrix(matrix: list) -> float:
 
 print(f"Variance: {variance_matrix(array)}")
 
+
+# Function to multiply matrix by given number
 def multiply_matrix_by_number(matrix: list, number: int) -> list:
     # Create a deep copy of the matrix to avoid modifying the original matrix
     multiplied_matrix = copy.deepcopy(matrix)
