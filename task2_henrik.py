@@ -7,10 +7,10 @@ def create_stencil_matrix(n):
         A[i, i] = -2  # Diagonal elements
         
         if i > 0:
-            A[i, i-1] = 1  # Lower off-diagonal elements
+            A[i, i-1] = 1  # Lower 1
         
         if i < n-1:
-            A[i, i+1] = 1  # Upper off-diagonal elements
+            A[i, i+1] = 1  # Upper 1
             
     return A
 
