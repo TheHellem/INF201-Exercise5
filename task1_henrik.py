@@ -39,7 +39,7 @@ print(f"Variance: {variance_matrix(array)}")
 # Function to multiply matrix by given number
 def multiply_matrix_by_number(matrix: list, number: int) -> list:
     # Create a deep copy of the matrix to avoid modifying the original matrix
-    multiplied_matrix = copy.deepcopy(matrix)
+    multiplied_matrix = matrix.copy()
     
     for row in range(len(multiplied_matrix)):
         for col in range(len(multiplied_matrix[0])):
